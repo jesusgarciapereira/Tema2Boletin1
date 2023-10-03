@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio02 {
 
 	public static void main(String[] args) {
-		// Declaramos las variable num1 y num2
+		// Declaramos las variable num1 y num2, para saber si son iguales
 		int num1, num2;
 		// Activamos el Scanner
 		Scanner sc = new Scanner(System.in);

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Ejercicio03 {
 
 	public static void main(String[] args) {
-		// Declaramos la variable numero
+		// Declaramos la variable numero para saber si es casi-cero
 		double numero;
 		// Activamos el Scanner
 		Scanner sc = new Scanner(System.in);

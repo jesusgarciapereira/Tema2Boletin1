@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio01 {
 
 	public static void main(String[] args) {
-		// Declaramos la variable numero
+		// Declaramos la variable numero, para saber si es par
 		int numero;
 		// Activamos el Scanner
 		Scanner sc = new Scanner(System.in);
