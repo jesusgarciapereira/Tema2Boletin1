@@ -25,7 +25,7 @@ public class Ejercicio05 {
 		// Leemos el número
 		num3 = sc.nextDouble();
 		// Mostramos la primera parte del resultado
-				System.out.print("Los números ordenados de mayor a menor serían ");
+				System.out.print("Los números ordenados de mayor a menor serían: ");
 				// La segunda parte del resultado dependerá de las siguientes condiciones
 		if (num1 >= num2 && num2 >= num3) {
 			System.out.println(num1 + ", " + num2 + " y " + num3);
