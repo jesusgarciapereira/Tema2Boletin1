@@ -27,5 +27,6 @@ public class Ejercicio07 {
 			System.out.println("El número " + numero + " tiene cinco cifras");
 
 		}
+		sc.close();
 	}
 }
