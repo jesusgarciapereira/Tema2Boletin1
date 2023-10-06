@@ -13,6 +13,7 @@ public class Ejercicio07 {
 		System.out.println("Introduzca un número del 0 al 99999");
 		// Leemos el número
 		numero = sc.nextInt();
+		// Mostramos el resultado, dependiendo de cada caso
 		if (numero < 0 || numero > 99999) {
 			System.out.println("Número no valido, debe estar comprendido entre 0 y 99999");
 		} else if (numero >= 0 && numero <= 9) {
@@ -27,6 +28,7 @@ public class Ejercicio07 {
 			System.out.println("El número " + numero + " tiene cinco cifras");
 
 		}
+		// Cerramos el Scanner
 		sc.close();
 	}
 }
