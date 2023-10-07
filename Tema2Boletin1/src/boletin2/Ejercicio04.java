@@ -39,7 +39,7 @@ public class Ejercicio04 {
 		}
 		default -> {
 			System.out.println("Número incorrecto");
-			yield -1;
+			yield 0;
 		}
 		};
 		
@@ -64,7 +64,7 @@ public class Ejercicio04 {
 		}
 		default -> {
 			System.out.println("Número incorrecto");
-			yield -1;
+			yield 0;
 		}
 		};
 		System.out.println("Tu tirada ha sido: " + numero1 + " + " + numero2 + " = " + (numero1 + numero2));

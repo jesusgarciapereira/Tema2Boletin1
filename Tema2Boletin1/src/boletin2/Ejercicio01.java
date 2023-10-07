@@ -6,18 +6,32 @@ public class Ejercicio01 {
 
 	public static void main(String[] args) {
 		int nota;
+		String calificacion;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Escriba su nota");
 		nota = sc.nextInt();
-		System.out.print("Su nota es de: ");
-		switch (nota) {
-		case 0, 1, 2, 3, 4 -> System.out.println("Insuficiente");
-		case 5 -> System.out.println("Suficiente");
-		case 6 -> System.out.println("Bien");
-		case 7, 8 -> System.out.println("Notable");
-		case 9, 10 -> System.out.println("Sobresaliente");
-		default -> System.out.println("Nota incorrecta");
+		calificacion = switch (nota) {
+		case 0, 1, 2, 3, 4 -> {
+			yield "Insuficiente";
 		}
+		case 5 -> {
+			yield "Suficiente";
+		}
+		case 6 -> {
+			yield "Bien";
+		}
+		case 7, 8 -> {
+			yield "Notable";
+		}
+		case 9, 10 -> {
+			yield "Sobresaliente";
+		}
+		default -> {
+			System.out.println("Nota incorrecta");
+			yield "";
+		}
+		};
+		System.out.println("Su nota es de: " + calificacion);
 		sc.close();
 	}
 
