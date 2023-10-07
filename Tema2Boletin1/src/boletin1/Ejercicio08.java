@@ -1,4 +1,4 @@
-package tema2;
+package boletin1;
 
 import java.util.Locale;
 import java.util.Scanner;
