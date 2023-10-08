@@ -16,8 +16,6 @@ public class Ejercicio04 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("¿Cuánto has sacado en la primera tirada? (escribe el número con letras)");
 		tirada1 = sc.nextLine();
-		System.out.println("¿Y en la segunda?");
-		tirada2 = sc.nextLine();
 		numero1 = switch (tirada1) {
 		case "UNO", "uno" -> {
 			yield UNO;
@@ -42,32 +40,39 @@ public class Ejercicio04 {
 			yield 0;
 		}
 		};
-		
-		numero2 = switch (tirada2) {
-		case "UNO", "uno" -> {
-			yield UNO;
+		if (numero1 >= UNO && numero1 <= SEIS) {
+			System.out.println("¿Y en la segunda?");
+			tirada2 = sc.nextLine();
+
+			numero2 = switch (tirada2) {
+			case "UNO", "uno" -> {
+				yield UNO;
+			}
+			case "DOS", "dos" -> {
+				yield DOS;
+			}
+			case "TRES", "tres" -> {
+				yield TRES;
+			}
+			case "CUATRO", "cuatro" -> {
+				yield CUATRO;
+			}
+			case "CINCO", "cinco" -> {
+				yield CINCO;
+			}
+			case "SEIS", "seis" -> {
+				yield SEIS;
+			}
+			default -> {
+				System.out.println("Número incorrecto");
+				yield 0;
+			}
+			};
+
+			if (numero2 >= UNO && numero2 <= SEIS) {
+				System.out.println("Tu tirada ha sido: " + numero1 + " + " + numero2 + " = " + (numero1 + numero2));
+			}
 		}
-		case "DOS", "dos" -> {
-			yield DOS;
-		}
-		case "TRES", "tres" -> {
-			yield TRES;
-		}
-		case "CUATRO", "cuatro" -> {
-			yield CUATRO;
-		}
-		case "CINCO", "cinco" -> {
-			yield CINCO;
-		}
-		case "SEIS", "seis" -> {
-			yield SEIS;
-		}
-		default -> {
-			System.out.println("Número incorrecto");
-			yield 0;
-		}
-		};
-		System.out.println("Tu tirada ha sido: " + numero1 + " + " + numero2 + " = " + (numero1 + numero2));
 		sc.close();
 	}
 }
