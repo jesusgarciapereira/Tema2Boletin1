@@ -40,7 +40,7 @@ public class Ejercicio04 {
 			yield 0;
 		}
 		};
-		if (numero1 >= UNO && numero1 <= SEIS) {
+		if (numero1 != 0) {
 			System.out.println("¿Y en la segunda?");
 			tirada2 = sc.nextLine();
 
@@ -69,7 +69,7 @@ public class Ejercicio04 {
 			}
 			};
 
-			if (numero2 >= UNO && numero2 <= SEIS) {
+			if (numero2 != 0) {
 				System.out.println("Tu tirada ha sido: " + numero1 + " + " + numero2 + " = " + (numero1 + numero2));
 			}
 		}
