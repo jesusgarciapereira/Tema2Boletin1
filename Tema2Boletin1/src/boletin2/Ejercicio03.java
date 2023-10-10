@@ -24,7 +24,14 @@ public class Ejercicio03 {
 		case "a", "A" -> System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
 		case "b", "B" -> System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
 		case "c", "C" -> System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
-		case "d", "D" -> System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+		case "d", "D" -> {
+			if (num2 != 0) {
+				System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+			} else {
+				System.out.println("No se puede dividir entre 0");
+			}
+		}
+
 		default -> System.out.println("Opción incorrecta");
 		}
 		sc.close();

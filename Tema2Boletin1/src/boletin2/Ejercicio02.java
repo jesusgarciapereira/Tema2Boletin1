@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class Ejercicio02 {
 
 	public static void main(String[] args) {
+		// Declaramos la variable numero
 		int numero;
+		// Declaramos la variable de tipo String diaSemana
 		String diaSemana;
+		// Activamos el scanner
 		Scanner sc = new Scanner(System.in);
+		// Le pedimos al usuario que escriba un número
 		System.out.println("Escriba un número");
 		numero = sc.nextInt();
 		diaSemana = switch (numero) {
