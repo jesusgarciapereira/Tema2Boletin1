@@ -2,20 +2,24 @@ package temawhile;
 
 import java.util.Scanner;
 
-public class Ejercicio02 {
+public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		int numero;
-		int i = 0;
+		int suma = 0;
+		int media;
+		int i=0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca un número");
 		numero = sc.nextInt();
-		while (numero >= 0) {
+		while(numero >=0) {
+			suma += numero;
 			System.out.println("Introduzca otro número. Negativo para acabar");
 			numero = sc.nextInt();
 			i++;
 		}
-		System.out.println("En total hay " + i + " números");
+		media = suma/i;
+		System.out.println("La media de todos los números es " + media);
 		sc.close();
 	}
 
