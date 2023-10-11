@@ -17,26 +17,26 @@ public class Ejercicio01 {
 		nota = sc.nextInt();
 		// Asignamos el valor de la calificación, en función del valor numérico de nota
 		calificacion = switch (nota) {
-		case 0, 1, 2, 3, 4 -> {
-			yield "Insuficiente"; /* Si la nota es 0, 1, 2, 3 ó 4; la calificación tendrá el valor de
+		case 0, 1, 2, 3, 4 -> 
+			 "Insuficiente"; /* Si la nota es 0, 1, 2, 3 ó 4; la calificación tendrá el valor de
 									 "Insuficiente" */
-		}
-		case 5 -> {
-			yield "Suficiente"; // Si la nota es 5; la calificación tendrá el valor de "Suficiente"
-		}
-		case 6 -> {
-			yield "Bien"; // Si la nota es 6; la calificación tendrá el valor de "Bien"
-		}
-		case 7, 8 -> {
-			yield "Notable"; // Si la nota es 7 u 8; la calificación tendrá el valor de "Notable"
-		}
-		case 9, 10 -> {
-			yield "Sobresaliente"; // Si la nota es 9 ó 10; la calificación tendrá el valor de "Sobresaliente"
-		}
-		default -> {
-			yield "Nota incorrecta"; /* Si la nota no tiene ningún valor de los anteriores; la calificación tendrá el
+		
+		case 5 -> 
+			 "Suficiente"; // Si la nota es 5; la calificación tendrá el valor de "Suficiente"
+		
+		case 6 -> 
+			 "Bien"; // Si la nota es 6; la calificación tendrá el valor de "Bien"
+		
+		case 7, 8 -> 
+			 "Notable"; // Si la nota es 7 u 8; la calificación tendrá el valor de "Notable"
+		
+		case 9, 10 -> 
+			 "Sobresaliente"; // Si la nota es 9 ó 10; la calificación tendrá el valor de "Sobresaliente"
+		
+		default -> 
+			 "Nota incorrecta"; /* Si la nota no tiene ningún valor de los anteriores; la calificación tendrá el
 										 valor de "Nota incorrecta" */
-		}
+		
 		};
 		// Mostramos el resultado
 		System.out.println("Su nota es de: " + calificacion);

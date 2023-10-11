@@ -15,30 +15,30 @@ public class Ejercicio02 {
 		System.out.println("Escriba un número");
 		numero = sc.nextInt();
 		diaSemana = switch (numero) {
-		case 1 -> {
-			yield "Lunes";
-		}
-		case 2 -> {
-			yield "Martes";
-		}
-		case 3 -> {
-			yield "Miércoles";
-		}
-		case 4 -> {
-			yield "Jueves";
-		}
-		case 5 -> {
-			yield "Viernes";
-		}
-		case 6 -> {
-			yield "Sábado";
-		}
-		case 7 -> {
-			yield "Domingo";
-		}
-		default -> {
-			yield "'Número incorrecto'";
-		}
+		case 1 -> 
+			 "Lunes";
+		
+		case 2 -> 
+			 "Martes";
+		
+		case 3 -> 
+			 "Miércoles";
+		
+		case 4 -> 
+			 "Jueves";
+		
+		case 5 -> 
+			 "Viernes";
+		
+		case 6 -> 
+			 "Sábado";
+		
+		case 7 -> 
+			 "Domingo";
+		
+		default -> 
+			 "'Número incorrecto'";
+		
 		};
 		System.out.println("El número " + numero + " corresponde al " + diaSemana);
 		sc.close();

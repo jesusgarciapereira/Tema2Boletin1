@@ -17,24 +17,24 @@ public class Ejercicio04 {
 		System.out.println("¿Cuánto has sacado en la primera tirada? (escribe el número con letras)");
 		tirada1 = sc.nextLine();
 		numero1 = switch (tirada1) {
-		case "UNO", "uno" -> {
-			yield UNO;
-		}
-		case "DOS", "dos" -> {
-			yield DOS;
-		}
-		case "TRES", "tres" -> {
-			yield TRES;
-		}
-		case "CUATRO", "cuatro" -> {
-			yield CUATRO;
-		}
-		case "CINCO", "cinco" -> {
-			yield CINCO;
-		}
-		case "SEIS", "seis" -> {
-			yield SEIS;
-		}
+		case "UNO", "uno" -> 
+			 UNO;
+		
+		case "DOS", "dos" -> 
+			 DOS;
+		
+		case "TRES", "tres" -> 
+			 TRES;
+		
+		case "CUATRO", "cuatro" -> 
+			 CUATRO;
+		
+		case "CINCO", "cinco" -> 
+			 CINCO;
+		
+		case "SEIS", "seis" -> 
+			 SEIS;
+		
 		default -> {
 			System.out.println("Número incorrecto");
 			yield 0;
