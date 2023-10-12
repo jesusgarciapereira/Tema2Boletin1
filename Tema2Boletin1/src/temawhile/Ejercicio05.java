@@ -13,10 +13,9 @@ public class Ejercicio05 {
 		int contadorNegativos = 0;
 		int i = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Escriba diez números enteros");
+		System.out.println("Escriba diez números enteros (separados por un INTRO)");
 		while (i < 10) {
 			numero = sc.nextInt();
-			i++;
 			if (numero > 0) {
 				sumaPositivos += numero;
 			} else if (numero < 0) {
@@ -25,10 +24,13 @@ public class Ejercicio05 {
 			} else {
 				contadorCeros++;
 			}
+			i++;
 		}
-		mediaNegativos = sumaNegativos / contadorNegativos;
 		System.out.println("La suma de todos los positivos es " + sumaPositivos);
-		System.out.println("La media de todos los negativos es " + mediaNegativos);
+		if (contadorNegativos != 0) {
+			mediaNegativos = sumaNegativos / contadorNegativos;
+			System.out.println("La media de todos los negativos es " + mediaNegativos);
+		} else {System.out.println("No se ha escrito ningún número negativo");}
 		System.out.println("El número de ceros es de " + contadorCeros);
 		sc.close();
 	}
