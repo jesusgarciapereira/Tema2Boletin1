@@ -1,4 +1,4 @@
-package temawhile;
+package boletin3;
 
 import java.util.Scanner;
 
@@ -13,8 +13,8 @@ public class Ejercicio05 {
 		int contadorNegativos = 0;
 		int i = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Escriba diez números enteros (separados por un INTRO)");
 		while (i < 10) {
+			System.out.println("Escriba un número (llevamos " + i + ")");
 			numero = sc.nextInt();
 			if (numero > 0) {
 				sumaPositivos += numero;
@@ -30,7 +30,9 @@ public class Ejercicio05 {
 		if (contadorNegativos != 0) {
 			mediaNegativos = sumaNegativos / contadorNegativos;
 			System.out.println("La media de todos los negativos es " + mediaNegativos);
-		} else {System.out.println("No se ha escrito ningún número negativo");}
+		} else {
+			System.out.println("No se ha escrito ningún número negativo");
+		}
 		System.out.println("El número de ceros es de " + contadorCeros);
 		sc.close();
 	}

@@ -7,6 +7,7 @@ public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		double num1, num2;
+		double resultado;
 		String opcion;
 		Scanner sc = new Scanner(System.in);
 		sc.useLocale(Locale.US);
@@ -21,12 +22,22 @@ public class Ejercicio03 {
 		System.out.println("De todas estas opciones elige una para aplicar (escribe 'a', 'b', 'c' o 'd')");
 		opcion = sc.next();
 		switch (opcion) {
-		case "a", "A" -> System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
-		case "b", "B" -> System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
-		case "c", "C" -> System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+		case "a", "A" -> {
+			resultado = num1 + num2;
+			System.out.println(num1 + " + " + num2 + " = " + resultado);
+		}
+		case "b", "B" -> {
+			resultado = num1 - num2;
+			System.out.println(num1 + " - " + num2 + " = " + resultado);
+		}
+		case "c", "C" -> {
+			resultado = num1 * num2;
+			System.out.println(num1 + " * " + num2 + " = " + resultado);
+		}
 		case "d", "D" -> {
 			if (num2 != 0) {
-				System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+				resultado = num1 / num2;
+				System.out.println(num1 + " / " + num2 + " = " + resultado);
 			} else {
 				System.out.println("No se puede dividir entre 0");
 			}
