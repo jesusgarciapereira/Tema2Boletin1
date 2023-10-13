@@ -13,7 +13,6 @@ public class Ejercicio07 {
 		System.out.println("He pensado un número del 1 al 100, adivínalo");
 		System.out.println("Si quieres rendirte, elige -1");
 		numElegido = sc.nextInt();
-
 		while (numElegido != numAleatorio && numElegido >= 0) {
 			if (numAleatorio < numElegido) {
 				System.out.println("Menos");
