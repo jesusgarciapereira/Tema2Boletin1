@@ -13,17 +13,21 @@ public class Ejercicio07 {
 		System.out.println("He pensado un número del 1 al 100, adivínalo");
 		System.out.println("Si quieres rendirte, elige -1");
 		numElegido = sc.nextInt();
-		while (numElegido != numAleatorio && numElegido >= 0) {
-			if (numAleatorio < numElegido) {
-				System.out.println("Menos");
+		while (numElegido != numAleatorio && numElegido != -1) {
+			if (numElegido >= 1 && numElegido <= 100) {
+				if (numAleatorio < numElegido) {
+					System.out.println("Menos");
+				} else {
+					System.out.println("Más");
+				}
 			} else {
-				System.out.println("Más");
+				System.out.println("Elige un número del 1 al 100 o ríndete eligiendo -1");
 			}
 			numElegido = sc.nextInt();
 		}
 		if (numElegido == -1) {
 			System.out.println("Qué pena... había pensado en el " + numAleatorio);
-		} else if (numElegido == numAleatorio) {
+		} else {
 			System.out.println("¡Correcto! ¿Jugamos otra vez?");
 		}
 		sc.close();
