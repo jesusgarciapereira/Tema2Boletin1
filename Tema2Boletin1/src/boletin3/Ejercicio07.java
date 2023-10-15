@@ -13,7 +13,7 @@ public class Ejercicio07 {
 		System.out.println("He pensado un número del 1 al 100, adivínalo");
 		System.out.println("Si quieres rendirte, elige -1");
 		numElegido = sc.nextInt();
-		while (numElegido != numAleatorio && numElegido != -1) {
+		while (numElegido != -1 && numElegido != numAleatorio) {
 			if (numElegido >= 1 && numElegido <= 100) {
 				if (numAleatorio < numElegido) {
 					System.out.println("Menos");
@@ -28,7 +28,7 @@ public class Ejercicio07 {
 		if (numElegido == -1) {
 			System.out.println("Qué pena... había pensado en el " + numAleatorio);
 		} else {
-			System.out.println("¡Correcto! ¿Jugamos otra vez?");
+			System.out.println("¡Correcto! pensé " + numAleatorio + " ¿Jugamos otra vez?");
 		}
 		sc.close();
 	}
