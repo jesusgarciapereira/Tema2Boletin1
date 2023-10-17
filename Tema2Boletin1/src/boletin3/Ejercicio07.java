@@ -21,7 +21,7 @@ public class Ejercicio07 {
 					System.out.println("Más");
 				}
 			} else {
-				System.out.println("Elige un número del 1 al 100 o ríndete eligiendo -1");
+				System.out.println("Recuerda: un número del 1 al 100 o ríndete eligiendo -1");
 			}
 			numElegido = sc.nextInt();
 		}
