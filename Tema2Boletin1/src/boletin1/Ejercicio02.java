@@ -22,16 +22,12 @@ public class Ejercicio02 {
 		// La segunda parte del resultado dependerá de las siguientes condiciones
 
 		// Si los valores de num1 y num2 son iguales, mostrará que son iguales
-		if (num1 == num2) {
+		if (num1 == num2) 
 			System.out.println("son iguales");
-		}
-		// Si no se cumple lo anterior, mostrará que son diferentes
-		else {
+		// Si no se cumple la condición anterior, mostrará que son diferentes
+		else 
 			System.out.println("son diferentes");
-		}
 		// Cerramos el Scanner
 		sc.close();
-
 	}
-
 }

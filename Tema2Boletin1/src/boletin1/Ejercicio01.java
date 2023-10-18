@@ -16,15 +16,12 @@ public class Ejercicio01 {
 		// Mostramos la primera parte del resultado
 		System.out.print("El número " + numero + " ");
 		// La segunda parte del resultado dependerá de las siguientes condiciones
-		
 		// Si el módulo de 2 es 0 mostrará que es par
-		if (numero % 2 == 0) {
+		if (numero % 2 == 0)
 			System.out.println("es par");
-		}
-		// Si no se cumple lo anterior, mostrará que es impar
-		else {
+		// Si no se cumple la condición anterior, mostrará que es impar
+		else
 			System.out.println("es impar");
-		}
 		// Cerramos el Scanner
 		sc.close();
 	}

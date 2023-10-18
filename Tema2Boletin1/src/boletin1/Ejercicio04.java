@@ -24,18 +24,19 @@ public class Ejercicio04 {
 		 * Si el primer número es menor que el segundo, me los mostrará en el mismo
 		 * orden
 		 */
-		if (num1 < num2) {
+		if (num1 < num2)
 			System.out.println("Ambos números ordenados de menor a mayor serían " + num1 + " y " + num2 + "\n" + num1
 					+ " < " + num2);
-			// Si ambos números son iguales, me los mostrará tal cual
-		} else if (num1 == num2) {
+		// Si ambos números son iguales, me los mostrará tal cual
+		else if (num1 == num2)
 			System.out.println("En este caso, ambos números son iguales\n" + num1 + " = " + num2);
-		}
-		// Si el primer número es mayor que el segundo, me los mostrará en orden inverso
-		else {
+		/*
+		 * Si no se cumplen las condiciones anteriores, es decir, si el primer número es
+		 * mayor que el segundo, me los mostrará en orden inverso
+		 */
+		else
 			System.out.println("Ambos números ordenados de menor a mayor serían " + num2 + " y " + num1 + "\n" + num2
 					+ " < " + num1);
-		}
 		// Cerramos el Scanner
 		sc.close();
 
