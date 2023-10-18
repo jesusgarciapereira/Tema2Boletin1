@@ -22,7 +22,7 @@ public class Ejercicio05 {
 			System.out.println("¿Es el " + numPensado + "?");
 			acierto = sc.nextLine();
 				if (acierto.equalsIgnoreCase("mayor")) {
-					min = numPensado;
+					min = numPensado + 1;
 				} else if (acierto.equalsIgnoreCase("menor")) {
 					max = numPensado;
 				} else if (!acierto.equalsIgnoreCase("igual"))
