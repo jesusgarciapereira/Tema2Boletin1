@@ -14,8 +14,8 @@ public class Ejercicio06 {
 			do {
 				System.out.println("Jugador 1 elige una de las tres opciones");
 				jugador1 = sc.nextLine();
-			} while (!((jugador1.equalsIgnoreCase("PIEDRA")) || (jugador1.equalsIgnoreCase("PAPEL"))
-					|| (jugador1.equalsIgnoreCase("TIJERA"))));
+			} while (!(jugador1.equalsIgnoreCase("PIEDRA") || jugador1.equalsIgnoreCase("PAPEL")
+					|| jugador1.equalsIgnoreCase("TIJERA")));
 			do {
 				System.out.println("Jugador 2 elige una de las tres opciones");
 				jugador2 = sc.nextLine();
