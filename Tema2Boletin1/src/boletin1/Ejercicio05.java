@@ -39,7 +39,7 @@ public class Ejercicio05 {
 			System.out.println(num3 + ", " + num1 + " y " + num2);
 		} else {
 			System.out.println(num3 + ", " + num2 + " y " + num1);
-		}
+		} // Cada una de las condiciones determinaran las seis combinaciones posibles en el orden de los tres números
 		// Cerramos el Scanner
 		sc.close();
 	}
