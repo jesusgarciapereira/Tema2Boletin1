@@ -13,7 +13,9 @@ public class Ejercicio02 {
 		Scanner sc = new Scanner(System.in);
 		// Le pedimos al usuario que escriba un número
 		System.out.println("Escriba un número");
+		// Leemos el número
 		numero = sc.nextInt();
+		// Establecemos la relación de las variables en función del valor del número
 		diaSemana = switch (numero) {
 		case 1 -> 
 			 "Lunes";
@@ -40,7 +42,9 @@ public class Ejercicio02 {
 			 "'Número incorrecto'";
 		
 		};
+		// Mostramos el resultado
 		System.out.println("El número " + numero + " corresponde al " + diaSemana);
+		// Cerramos el scanner
 		sc.close();
 	}
 }
