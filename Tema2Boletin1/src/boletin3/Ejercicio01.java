@@ -5,21 +5,33 @@ import java.util.Scanner;
 public class Ejercicio01 {
 
 	public static void main(String[] args) {
-		int suma = 0;
-		// Valor que vamos a leer del teclado
+		// Declaramos la variable del número que le pediremos al usuario
 		int numero;
-		// Scanner para leer del teclado
+		/*
+		 * Decalaramos la variable de la suma que incrementaremos, por eso la
+		 * inicializamos en 0
+		 */
+		int suma = 0;
+		// Activamos el scanner
 		Scanner sc = new Scanner(System.in);
-		// Pedimos un numero al usuario
+		// Le pedimos al usuario un número
 		System.out.println("Introduzca un número");
+		// Leemos el número
 		numero = sc.nextInt();
+		/*
+		 * Mientras el número sea mayor o igual que 0, se repetiran las siguientes
+		 * instrucciones
+		 */
 		while (numero >= 0) {
-
-			System.out.println("A " +suma + " le sumamos " + numero + " y nos da "+ (suma += numero) + "\nIntroduzca otro número. Valor negativo para salir");
+			// Mostramos el resultado provisional y le pedimos al usuario otro número
+			System.out.println("A " + suma + " le sumamos " + numero + " y nos da " + (suma += numero)
+					+ "\nIntroduzca otro número. Valor negativo para salir");
+			// Leemos el nuevo número
 			numero = sc.nextInt();
 		}
-		// Imprimimos el resultado de la suma
+		// Mostramos el resultado final
 		System.out.println("Suma total: " + suma);
+		// Cerramos el scanner
 		sc.close();
 	}
 

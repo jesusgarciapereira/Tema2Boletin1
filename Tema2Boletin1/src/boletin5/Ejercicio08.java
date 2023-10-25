@@ -15,8 +15,10 @@ public class Ejercicio08 {
 				System.out.println("Introduzca cinco calificaciones de alumnos (llevamos " + i + ")");
 				calificacion = sc.nextDouble();
 			} while (calificacion < 0);
-			if (calificacion < 5)
+			if (calificacion < 5) {
 				suspenso = true;
+				//break;
+			}
 		}
 		if (suspenso == true)
 			System.out.println("Hay algún suspenso");

@@ -16,8 +16,10 @@ public class Ejercicio09 {
 			System.out.println("El número " + num + " no es primo porque él en sí es la unidad");
 		else {
 			for (int i = 2; i < num; i++) {
-				if (num % i == 0)
+				if (num % i == 0) {
 					primo = false;
+					break;
+				}
 			}
 			if (primo == true)
 				System.out.println("El número " + num + " es primo");
