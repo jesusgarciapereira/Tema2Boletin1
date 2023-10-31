@@ -21,7 +21,7 @@ public class Ejercicio09 {
 					break;
 				}
 			}
-			if (primo == true)
+			if (primo)
 				System.out.println("El número " + num + " es primo");
 			else
 				System.out.println("El número " + num + " no es primo");
