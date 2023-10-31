@@ -15,7 +15,7 @@ public class Ejercicio09 {
 		if (num == 1)
 			System.out.println("El número " + num + " no es primo porque él en sí es la unidad");
 		else {
-			for (int i = 2; i < num; i++) {
+			for (int i = 2; i <= Math.sqrt(num); i++) {
 				if (num % i == 0) {
 					primo = false;
 					break;
